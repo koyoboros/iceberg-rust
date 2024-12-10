@@ -396,6 +396,7 @@ async fn table_scan(
                         range: None,
                         statistics: Some(manifest_statistics),
                         extensions: None,
+                        metadata_size_hint: None,
                     };
                     file_groups
                         .entry(file.partition_values.clone())
@@ -445,6 +446,7 @@ async fn table_scan(
                     range: None,
                     statistics: Some(manifest_statistics),
                     extensions: None,
+                    metadata_size_hint: None,
                 };
                 file_groups
                     .entry(file.partition_values.clone())

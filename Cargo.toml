@@ -24,13 +24,13 @@ async-trait = "0.1"
 chrono = { version = "0.4", default-features = false, features = ["serde", "clock"] }
 arrow = "53.3.0"
 arrow-schema = "53.3.0"
-datafusion = "43.0.0"
-datafusion-sql = "43.0.0"
-datafusion-expr = "43.0.0"
-datafusion-common = "43.0.0"
-datafusion-execution = "43.0.0"
-datafusion-functions = { version = "43.0.0", features = ["crypto_expressions"] }
-datafusion-functions-aggregate = "43.0.0"
+datafusion = {git = "https://github.com/apache/datafusion.git", rev="becd0c9"}
+datafusion-sql = {git = "https://github.com/apache/datafusion.git", rev="becd0c9"}
+datafusion-expr = {git = "https://github.com/apache/datafusion.git", rev="becd0c9"}
+datafusion-common = {git = "https://github.com/apache/datafusion.git", rev="becd0c9"}
+datafusion-execution = {git = "https://github.com/apache/datafusion.git", rev="becd0c9"}
+datafusion-functions = { git = "https://github.com/apache/datafusion.git", rev="becd0c9", features = ["crypto_expressions"] }
+datafusion-functions-aggregate = {git = "https://github.com/apache/datafusion.git", rev="becd0c9"}
 parquet = { version = "53.3.0", features = ["async", "object_store"] }
 sqlparser = { version = "0.51.0", features = ["visitor"] }
 thiserror = "2"
@@ -40,3 +40,5 @@ itertools = "0.10.5"
 derive-getters = "0.3.0"
 tracing = "0.1"
 tracing-futures = "0.2"
+quote = "1.0.37"
+bytes = "1.9.0"
